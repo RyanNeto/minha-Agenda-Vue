@@ -1,4 +1,4 @@
-# agenda-app-vue
+# agenda-vue
 
 ## Project setup
 ```

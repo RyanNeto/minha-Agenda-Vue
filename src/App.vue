@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header/>
+    <div id="container">
+      <PainelContato/>
+      <Agenda/>
+    </div>
   </div>
 </template>
+  <script>
+    import Agenda from './components/Agenda.vue'
+    import PainelContato from './components/PainelContato.vue'
+    import Header from './components/Header.vue'
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  export default {
+    name: 'App',
+    components: {
+    PainelContato, Header, Agenda,}
+    }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  background-color: #dddddd;
+}
+#container{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  margin: auto;
 }
 </style>
